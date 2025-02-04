@@ -8,6 +8,7 @@ const pathName = usePathname()
 const {replace} = useRouter()
 const handleSearch = useDebouncedCallback((search:string) => {
   const params = new URLSearchParams(saerchParams)
+  params.set('page', '1');
   if(search) {
     params.set('query', search)
   } else {
