@@ -31,3 +31,4 @@ const handleSearch = useDebouncedCallback((search:string) => {
     </div>
   );
 }
+
